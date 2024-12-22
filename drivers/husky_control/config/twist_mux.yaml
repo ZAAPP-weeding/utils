@@ -1,0 +1,32 @@
+twist_mux:
+  ros__parameters:
+    topics:
+      override:
+        topic: override/cmd_vel
+        timeout: 0.5
+        priority: 100
+      joy:
+        topic: joy_teleop/cmd_vel
+        timeout: 0.5
+        priority: 10
+      interactive_marker:
+        topic: twist_marker_server/cmd_vel
+        timeout: 0.5
+        priority: 8
+      controller:
+        topic: /controller/cmd_vel
+        timeout: 0.5
+        priority: 1
+      behavior:
+        topic: /behavior/cmd_vel
+        timeout: 0.5
+        priority: 5
+    locks:
+      e_stop:
+        topic: e_stop
+        timeout: 0.0
+        priority: 255
+      webapp:
+        topic: webapp/e_stop
+        timeout: 0.0
+        priority: 10
