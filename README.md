@@ -55,8 +55,6 @@ The `core` window also contains four panes, containing custom drivers:
    - **Command**: `ros2 run manipulator_ros manipulator_node`
    - **Description**: Controls the robot's 2DOF manipulator + laser.
 
----
-
 4. **Odom2World Node**:
    - **Command**: `ros2 run odom2world odom2world`
    - **Description**: Converts odometry data to a predefined world frame.
